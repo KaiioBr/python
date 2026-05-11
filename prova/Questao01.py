@@ -9,7 +9,7 @@ class App(ctk.CTk):
         super().__init__()
 
         # Configurações da Janela Principal
-        self.title("Cálculo de Imposto de Renda")
+        self.title("Cálculo de Imposto de REnda")
         self.geometry("400x460")
         self.resizable(False, False)
 
@@ -18,18 +18,10 @@ class App(ctk.CTk):
         # ----------------------------------------------------
         self.lbl_title = ctk.CTkLabel(
             self, 
-            text="Cálculo de Imposto de Renda", 
+            text="Cálculo de Imposto de REnda", 
             font=ctk.CTkFont(size=20, weight="bold")
         )
         self.lbl_title.pack(pady=(20, 0))
-
-        self.lbl_subtitle = ctk.CTkLabel(
-            self, 
-            text="(Simplificado)", 
-            font=ctk.CTkFont(size=16, weight="bold"), 
-            text_color="#3b82f6"  # Azul destacado
-        )
-        self.lbl_subtitle.pack(pady=(0, 20))
 
         # ----------------------------------------------------
         # CAMPOS DE ENTRADA (FORMULÁRIO)
